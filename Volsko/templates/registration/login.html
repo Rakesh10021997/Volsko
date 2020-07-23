@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% block body_block%}
+<body>
+<div class="container" align='center'>
+  <h1>welcome to Volsko Login Page</h1>
+  <div class="container" align='center'>
+
+    <form  method="post">
+
+    {{form.as_p}}
+    {% csrf_token %}
+    <button type="Submit" name="button">Loin</button>
+    </form>
+
+
+  </div>
+</div>
+
+
+</body>
+
+
+
+{% endblock %}
